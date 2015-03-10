@@ -32,5 +32,11 @@ $(document).ready(function(){
 
     $('body').append(dancer.$node);
   });
+
+  $(".lineUp").on("click", function(event){
+    for (var i = 0; i < window.dancers.length; i++) {
+      window.dancers[i].lineUp()
+    }
+  });
 });
 
