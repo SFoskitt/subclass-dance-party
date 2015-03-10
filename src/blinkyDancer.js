@@ -10,6 +10,5 @@ var makeBlinkyDancer = function(top, left, timeBetweenSteps){
   makeBlinkyDancer.prototype.step = function(){
     var temp = makeDancer.prototype.step.call(this)
     setInterval(temp, this._timeBetweenSteps)
-    this.$node.toggle();
   };
 
