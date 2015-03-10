@@ -1,6 +1,7 @@
 var makeTinyDancer = function(top, left, timeBetweenSteps){
   makeDancer.call(this, top, left, timeBetweenSteps)
   this.$node.addClass('tiny')
+  this.$node.id = "tinyID"
 }
 
   makeTinyDancer.prototype = Object.create(makeDancer.prototype)
@@ -11,4 +12,6 @@ var makeTinyDancer = function(top, left, timeBetweenSteps){
     setInterval(temp, this._timeBetweenSteps)
     this.$node.toggle();
   };
+
+
 

@@ -28,6 +28,38 @@ $(document).ready(function(){
       Math.random() * 1000
     );
 
+    if (dancer.constructor === makeTinyDancer || dancer.constructor === makeBananaDancer || dancer.constructor === makeBlinkyDancer) {
+      dancer.$node.on("click", function() {
+        alert("clicked")
+        var distance = 0
+        var index = 0
+        var tempLeft = 0
+        var tempTop = 0
+        var thisLeft = parseFloat(this.style.left)
+        var thisTop = parseFloat(this.style.top)
+        for(var i = 0; i < window.dancers.length; i++) {
+          var T = parseFloat(window.dancers[i].top)
+          var L = parseFloat(window.dancers[i].left)
+          var tempDistance, leftMath, topMath = 0
+          leftMath = Math.pow((thisLeft-L), 2)
+          topMath = Math.pow((thisTop-T), 2)
+
+          tempDistance = Math.sqrt( leftMath + topMath)
+          if (tempDistance > distance) {
+            distance = tempDistance
+            index = i
+            tempLeft = window.dancers[i].left
+            tempTop = window.dancers[i].top
+            tempLeft = tempLeft + "px"
+            tempTop = tempTop + "px"
+          }
+        }
+        window.dancers[index].setPosition(thisTop, thisLeft)
+        this.style.left = tempLeft
+        this.style.top = tempTop
+      });
+    }
+
     window.dancers.push(dancer)
 
     $('body').append(dancer.$node);
@@ -38,11 +70,6 @@ $(document).ready(function(){
       window.dancers[i].lineUp()
     }
   }); 
-
-  $(".banana").on("click", function(event){
-    $(".banana").css({top:0})
-  });
-
 });
 
 

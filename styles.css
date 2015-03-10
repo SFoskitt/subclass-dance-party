@@ -33,7 +33,7 @@ body, a:link, a:visited, a:active{
 }
 
 .banana:hover{
-  border:10px solid purple;
+  border:10px solid green;
 }
 
 .tiny{
@@ -41,4 +41,5 @@ body, a:link, a:visited, a:active{
   border-radius: 20px;
   position:absolute;
 }
+
 
