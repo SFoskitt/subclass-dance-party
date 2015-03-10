@@ -25,3 +25,15 @@ body, a:link, a:visited, a:active{
   border-radius:10px;
   position:absolute;
 }
+
+.banana{
+  border:10px solid yellow;
+  border-radius:10px;
+  position: absolute;
+}
+
+.tiny{
+  border:20px solid purple;
+  border-radius: 20px;
+  position:absolute;
+}
