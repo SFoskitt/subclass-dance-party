@@ -23,8 +23,5 @@ var makeDancer = function(top, left, timeBetweenSteps){
     this.$node.css({left: 0})
   }
 
-  makeDancer.prototype.getPosition = function() {
-    return [top,left]
-  }
 
 

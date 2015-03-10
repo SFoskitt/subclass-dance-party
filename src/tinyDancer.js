@@ -1,7 +1,6 @@
 var makeTinyDancer = function(top, left, timeBetweenSteps){
-  makeDancer.call(this, top, left, timeBetweenSteps)
-  this.$node.addClass('tiny')
-  this.$node.id = "tinyID"
+  makeDancer.call(this, top, left, timeBetweenSteps);
+  this.$node.removeClass('dancer').addClass('tiny');
 }
 
   makeTinyDancer.prototype = Object.create(makeDancer.prototype)

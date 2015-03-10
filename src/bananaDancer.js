@@ -1,6 +1,6 @@
 var makeBananaDancer = function(top, left, timeBetweenSteps){
   makeDancer.call(this, top, left, timeBetweenSteps)
-  this.$node.addClass('banana')
+  this.$node.removeClass('dancer').addClass('banana');
 }
 
   makeBananaDancer.prototype = Object.create(makeDancer.prototype)
@@ -9,10 +9,8 @@ var makeBananaDancer = function(top, left, timeBetweenSteps){
   makeBananaDancer.prototype.step = function(){
     var temp = makeDancer.prototype.step.call(this)
     setInterval(temp, this._timeBetweenSteps)
-    this.$node.toggle();
+    // this.$node.toggle();
   };
 
-  makeBananaDancer.prototype.top = function(){
-  	this.$node.css({top: 0})
-  }
+
 
