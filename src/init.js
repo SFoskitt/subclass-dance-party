@@ -30,11 +30,7 @@ $(document).ready(function(){
 
     if (dancer.constructor === makeTinyDancer || dancer.constructor === makeBananaDancer || dancer.constructor === makeBlinkyDancer) {
       dancer.$node.on("click", function() {
-        alert("clicked")
-        var distance = 0
-        var index = 0
-        var tempLeft = 0
-        var tempTop = 0
+        var distance = 0, index = 0, tempLeft = 0, tempTop = 0;
         var thisLeft = parseFloat(this.style.left)
         var thisTop = parseFloat(this.style.top)
         for(var i = 0; i < window.dancers.length; i++) {

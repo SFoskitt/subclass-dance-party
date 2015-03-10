@@ -3,7 +3,7 @@ body, html{
 }
 body{
   margin: 0px;
-  background-image: url('http://www.edmsauce.com/wp-content/uploads/2013/05/10-Photos-That-Will-Get-You-Excited-for-EDC-2013-Las-Vegas9.jpg');
+  background-image: url('edc.jpg');
   background-size: cover;
   font-size: 18px;
 }
@@ -29,13 +29,10 @@ body, a:link, a:visited, a:active{
 }
 
 .banana{
-  /*border:10px solid yellow;*/
-  /*border-radius:10px;*/
-  /*.css({'height': '100px', 'width': '100px', 'background-image': 'url ("http://www.saulpaughapples.com/images/apple-varieties/acey-mac-100.jpg")'})*/
   position: absolute;
   height: 164px;
   width: 300px;
-  background-image: url('http://fc04.deviantart.net/fs70/f/2012/196/d/1/dancing_banana_by_legoman824-d57bizb.gif');
+  background-image: url('banana.gif');
   background-size: contain;
 }
 
@@ -47,13 +44,16 @@ body, a:link, a:visited, a:active{
 
 }
 
-.dancer:hover{
-  border:20px solid green;
-}
-
 .tiny{
   position:absolute;
   height: 100px;
   width: 100px;
-  background-image: url('http://r.fod4.com/c=sq/s=w100,pd1/o=80/http://p.fod4.com/p/channels/tmzfj/profile/s=w1200/o=95/iZCsnvjRHuufbTGfdIYw_TONY_Boss_nosig.jpg');
+  background-image: url('TD1.jpg');
+}
+
+.tiny:hover{
+  position: absolute;
+  height: 100px;
+  width: 100px;
+  background-image: url('TD2.jpg');
 }
