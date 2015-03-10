@@ -12,3 +12,7 @@ var makeBananaDancer = function(top, left, timeBetweenSteps){
     this.$node.toggle();
   };
 
+  makeBananaDancer.prototype.top = function(){
+  	this.$node.css({top: 0})
+  }
+
