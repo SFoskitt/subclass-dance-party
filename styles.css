@@ -1,34 +1,50 @@
-body, html{
-  height:100%;
+body, html {
+  height: 100%;
 }
-body{
+
+body {
   margin: 0px;
   background-image: url('edc.jpg');
   background-size: cover;
-  font-size: 18px;
+  font-size: 15px;
+  font-family: Helvetica;
 }
-body, a:link, a:visited, a:active{
+
+body, a:link, a:visited, a:active {
   color: lightblue;
 }
-.title, .addDancerButton, .lineUp{
-  padding:5px 12px;
-  float:right;
+
+.title, .addDancerButton, .lineUp, .lightShow {
+  padding: 5px 12px;
+  float: right;
 }
-.topbar{
-  height:32px;
+
+.topbar {
+  height: 32px;
   background-color: #555;
 }
-.title{
+
+.title {
   background-color: #777;
 }
 
-.dancer{
-  border:20px solid red;
-  border-radius:20px;
-  position:absolute;
+.addDancerButton:hover {
+  font-weight: bold;
+  color: navy;
 }
 
-.banana{
+.dancer {
+  border: 20px solid red;
+  border-radius: 20px;
+  position: absolute;
+}
+
+.lineup:hover {
+  font-weight: bold;
+  color: navy;
+}
+
+.banana {
   position: absolute;
   height: 164px;
   width: 300px;
@@ -41,17 +57,26 @@ body, a:link, a:visited, a:active{
   width: 256px;
   height: 256px;
   background-image: url('blinky.gif');
-
 }
 
-.tiny{
-  position:absolute;
+.tiny {
+  position: absolute;
   height: 100px;
   width: 100px;
   background-image: url('TD1.jpg');
 }
 
-.tiny:hover{
+.lightshow{ 
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: auto;
+  width: 500px;
+  height: 281px;
+  background-image: url('lightshow.gif');
+  background-size:contain;
+}
+.tiny:hover {
   position: absolute;
   height: 100px;
   width: 100px;
